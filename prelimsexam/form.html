@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+       <div class="container-fluid">
+          <a class="navbar-brand" href="student.html"><img class="p-1" src="https://student.dct.edu.ph//dist/img/DCTLogo2.png" width="80vh" height="80vh">Group No.1
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="student.html">Students</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="attendance.html">Attendance</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="form.html">Form</a>
+                </li>
+              </ul>
+
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+
+              </form>
+            </div>
+          </div>
+      </nav>
+
+    <div class="container shadow p-3">
+    	<h2 class="text-center">Add Student Form</h2>
+    	<form>
+	    	<div class="row">
+	    		<div class="col-md-3 col-12 border">
+	    			<div class="text-center m-3">
+	  					<img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="rounded-circle w-100" alt="Profile">
+	  					<div class=" input-group mb-3">
+	  						<input type="file" class="form-control is-invalid m-3" id="inputGroupFile02" required>
+						</div>
+					</div>
+	    		</div><!--col-->
+				<div class="col-9">
+					<div class="row">
+						<div class="col-md-4 mb-3">
+		  					<label for="lastName" class="form-label">Last Name</label>
+		  					<div class="input-group">
+		    					<input type="text" class="form-control is-invalid rounded" id="lastName" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Juan" required>
+		    					<div class="invalid-feedback">
+      								Required
+    							</div>
+		  					</div>
+						</div><!--col3-->
+						<div class="col-md-4 col-12 mb-3">
+		  					<label for="firstName" class="form-label">First Name</label>
+		  					<div class="input-group">
+		    					<input type="text" class="form-control is-invalid rounded" id="firstName" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Dela Cruz" required>
+		    					<div class="invalid-feedback">
+      								Required
+    							</div>
+		  					</div>
+						</div><!--col3-->
+						<div class="col-md-4 col-12 mb-3">
+		  					<label for="middleName" class="form-label">Middle Name</label>
+		  					<div class="input-group ">
+		    					<input type="text" class="form-control is-valid rounded" id="middleName" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Cruz">
+		    					<div class="valid-feedback">
+      								Optional
+    							</div>
+		  					</div>
+						</div><!--col3-->
+					</div><!--row-->
+
+					<div class="row">
+						<div class="col-md-4 col-12 mb-3">
+		  					<label for="male" class="form-label">Gender</label>
+		  					<div class="form-check">
+ 								<input class="form-check-input rounded" type="radio" name="radioDefault" id="male" checked>
+ 								<style>
+								.form-check-input:checked {
+								background-color: #198754;
+								border-color: #198754;
+								}
+								</style>
+
+								  <label class="form-check-label" for="male">
+								    Male
+								  </label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input rounded" type="radio" name="radioDefault" id="female">
+							  	<label class="form-check-label" for="female">
+							    	Female
+							  	</label>
+							</div>
+						</div><!--col3-->
+						<div class="col-md-4 col-12 mb-3">
+
+		  					<label for="civilStatus" class="form-label">Civil Status</label>
+		  					<div class="input-group">
+		    					<select class="form-control is-valid rounded" id="civilStatus" size="1">
+		    						<option value="honda" selected>Single</option>
+									<option value="motorcycle">Married</option>
+									<option value="apple">Widowed</option>
+									<option value="apple">Divorced</option>
+								</select>
+		    					<div class="valid-feedback">
+      								Optional
+    							</div>
+		  					</div>
+						</div><!--col3-->
+
+						<div class="col-md-4 col-12 mb-3">
+		  					<label for="dateBirth" class="form-label">Date of Birth</label>
+		  					<div class="input-group ">
+		    					<input type="date" class="form-control is-invalid rounded" id="dateBirth" aria-describedby="basic-addon3 basic-addon4" required>
+		    					<div class="invalid-feedback">
+      								Required
+    							</div>
+		  					</div>
+						</div><!--col3-->
+
+						<div class="row">
+							<div class="col-md-8 col-12 mb-3">
+			  					<label for="placeBirth" class="form-label">Place of Birth</label>
+			  					<div class="input-group">
+			    					<input type="text" class="form-control is-invalid rounded" id="placeBirth" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Tarlac City" required>
+			    					<div class="invalid-feedback">
+	      								Required
+	    							</div>
+			  					</div>
+							</div><!--col3-->
+							<div class="col-md-4 col-12 mb-3">
+			  					<label for="nationality" class="form-label">Nationality</label>
+			  					<div class="input-group ">
+			    					<input type="text" class="form-control is-invalid rounded" id="nationality" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Filipino" required>
+			    					<div class="invalid-feedback">
+	      								Required
+	    							</div>
+			  					</div>
+							</div><!--col3-->
+						</div><!--row-->
+
+							<div class="row">
+								<div class="col-md-4 col-12 mb-3">
+				  					<label for="religion" class="form-label">Religion</label>
+				  					<div class="input-group">
+				    					<input type="text" class="form-control is-invalid rounded" id="religion" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Roman Catholic" required>
+				    					<div class="invalid-feedback">
+		      								Required
+		    							</div>
+				  					</div>
+								</div><!--col3-->
+								<div class="col-md-4 col-12 mb-3">
+				  					<label for="contactNumber" class="form-label">Contact No.</label>
+				  					<div class="input-group">
+				    					<input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control is-invalid rounded" id="contactNumber" aria-describedby="basic-addon3 basic-addon4" placeholder="09XXXXXXXXX" required>
+				    					<div class="invalid-feedback">
+		      								Invalid Pattern
+		    							</div>
+				  					</div>
+								</div><!--col3-->
+								<div class="col-md-4 col-12 mb-3">
+				  					<label for="emailAddress" class="form-label">Email</label>
+				  					<div class="input-group ">
+				    					<input type="text" class="form-control is-invalid rounded" id="emailAddress" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. JuanD@email.com" required>
+				    					<div class="invalid-feedback">
+		      								Required
+		    							</div>
+				  					</div>
+								</div><!--col3-->
+							</div><!--row-->
+
+							<div class="row">
+								<div class="col-md-12 col-12 mb-3">
+				  					<label for="street" class="form-label">Street</label>
+				  					<div class="input-group">
+				    					<input type="text" class="form-control is-invalid rounded" id="street" aria-describedby="basic-addon3 basic-addon4" placeholder="ex.85th Subd." required>
+				    					<div class="invalid-feedback">
+		      								Required
+		    							</div>
+				  					</div>
+							</div><!--row-->
+
+							<div class="row">
+								<div class="col-md-3 col-12 mb-3">
+				  					<label for="barangay" class="form-label">Barangay</label>
+				  					<div class="input-group">
+				    					<input type="text" class="form-control is-invalid rounded" id="barangay" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Sto. Rosario" required>
+				    					<div class="invalid-feedback">
+		      								Required
+		    							</div>
+				  					</div>
+								</div><!--col3-->
+								<div class="col-md-3 col-12 mb-3">
+				  					<label for="city" class="form-label">City</label>
+				  					<div class="input-group">
+				    					<input type="text" class="form-control is-invalid rounded" id="city" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Capas" required>
+				    					<div class="invalid-feedback">
+		      								Required
+		    							</div>
+				  					</div>
+								</div><!--col3-->
+								<div class="col-md-3 col-12 mb-3">
+				  					<label for="province" class="form-label">Province</label>
+				  					<div class="input-group ">
+				    					<input type="text" class="form-control is-invalid rounded" id="province" aria-describedby="basic-addon3 basic-addon4" placeholder="ex. Tarlac" required>
+				    					<div class="invalid-feedback">
+		      								Required
+		    							</div>
+				  					</div>
+								</div><!--col3-->
+							</div><!--row-->
+							<div class="row">
+								<div class="col-md-3 col-12 mb-3">
+				  					<button type="submit" class="btn btn-success">Add Student</button>
+								</div><!--col3-->
+							</div><!--row-->
+				</div><!--Row-->
+	    	</div><!--col9-->
+	    </div><!--Row-->
+    	</form>
+    </div><!--Container-->
+
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
